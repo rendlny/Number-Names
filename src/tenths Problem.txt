@@ -1,0 +1,35 @@
+01 (size =2 && i =0)
+
+012 (size =3 && i =1)
+-__
+
+0,123 (size =4 && i =2)
+--__
+
+01,234 (size =5 && (i =0 || i = 3) )
+__--__
+
+012,345 (size =6 && (i =1 || i = 4) )
+-__--__
+
+0,123,456 (size =7 && (i =2 || i = 5) )
+---__--__
+
+01,234,567 (size =8 && (i=0 || i=3 || i=6) )
+__--__--__
+
+--DESCRIPTION--
+need to setup and if that checks above situations
+W/o the if being extremley 
+
+if((size =2 && i =0) || (size =3 && i =1) || (size =4 && i =2) || (size =5 && (i =0 || i = 3) ) || .....){
+	do something;
+}
+
+^^Too long
+	need a way that repeatdly works with bigger and bigger numbers
+
+--SOLUTION--
+if(size>1 && ( i= size-2 || i= )){
+	do something;
+}

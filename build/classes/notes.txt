@@ -1,0 +1,20 @@
+Adds text after current text so start with first num on left
+
+get length eg. if len   = 1 > normal num
+			= 2 > double eg twenty
+			= 3 > hundred
+			= 4 > thousand
+			= 5 > double
+			= 6 > hundred
+			= 7 > 
+
+different for 11 to 19
+
+19, 000
+2, 019
+
+tenths
+20
+20, 000
+120
+120, 000
